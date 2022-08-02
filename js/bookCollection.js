@@ -50,7 +50,7 @@ AddButton.addEventListener('click', (e) => {
     const bk = addBook(bookTitle.value, bookAuthor.value);
     books.push(bk);
     dispalyBook(bk);
-    location.reload();
+    window.location.reload();
     localStorage.setItem('booksArr', JSON.stringify(books));
   }
 });
@@ -59,6 +59,6 @@ document.querySelectorAll('.remove-btn').forEach((btn, i) => {
   btn.addEventListener('click', () => {
     books.splice(i, 1);
     localStorage.setItem('booksArr', JSON.stringify(books));
-    location.reload();
+    window.location.reload();
   });
 });
