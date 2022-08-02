@@ -1,72 +1,39 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Book collection
 
-# Project Name
-
-> Description the project.
-
+- A book collection site, with functionality of storing, retrieving and deleting data.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- JavaScript
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- To access this site, you can clone it to you local environment
 
 ## Authors
 
-👤 **Author1**
+👤 **Choice Osobor**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@techEmprez](https://github.com/techEmprez)
+- Twitter: [@techEmprez](https://twitter.com/techEmprez)
+- LinkedIn: [Choice Osobor](https://www.linkedin.com/in/choice-osobor/)
 
-👤 **Author2**
+👤 **Mahdi Mahdawi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mahdimahdawi](https://github.com/mahdimahdawi)
+- Twitter: [@mahdimahdawi](https://twitter.com/mahdimahdawi)
+- LinkedIn: [Mahdi Mahdawi](https://linkedin.com/in/feed)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
