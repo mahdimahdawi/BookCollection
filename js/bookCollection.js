@@ -1,4 +1,3 @@
-
 const bookTitle = document.querySelector('.title');
 const bookAuthor = document.querySelector('.author');
 const AddButton = document.querySelector('.add');
@@ -17,21 +16,21 @@ function addBook(t, a) {
 }
 
 function dispalyBook(book) {
-      const bookT = document.createElement('p');
-      bookT.innerHTML = book.title;
-      bookT.className = 'book-title';
-      const bookA = document.createElement('p');
-      bookA.innerHTML = book.author;
-      bookA.className = 'book-author';
-      const removeButton = document.createElement('button');
-      removeButton.innerHTML = 'Remove';
-      removeButton.className = 'remove-btn';
-      const line = document.createElement('hr');
+  const bookT = document.createElement('p');
+  bookT.innerHTML = book.title;
+  bookT.className = 'book-title';
+  const bookA = document.createElement('p');
+  bookA.innerHTML = book.author;
+  bookA.className = 'book-author';
+  const removeButton = document.createElement('button');
+  removeButton.innerHTML = 'Remove';
+  removeButton.className = 'remove-btn';
+  const line = document.createElement('hr');
 
-      bookList.appendChild(bookT);
-      bookList.appendChild(bookA);
-      bookList.appendChild(removeButton);
-      bookList.appendChild(line);  
+  bookList.appendChild(bookT);
+  bookList.appendChild(bookA);
+  bookList.appendChild(removeButton);
+  bookList.appendChild(line);
 }
 
 let localBooks = [];
@@ -61,6 +60,5 @@ document.querySelectorAll('.remove-btn').forEach((btn, i) => {
     books.splice(i, 1);
     localStorage.setItem('booksArr', JSON.stringify(books));
     location.reload();
-  })
+  });
 });
-
