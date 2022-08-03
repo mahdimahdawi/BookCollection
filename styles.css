@@ -6,3 +6,39 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+
+.book-section {
+  text-align: center;
+}
+
+.book-list {
+  border: 1px solid black;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.book-div {
+  display: flex;
+  border: none;
+  justify-content: space-between;
+}
+
+.remove-btn {
+  width: 20%;
+  height: 30px;
+}
+
+hr {
+  width: 150px;
+  height: 2px;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.add {
+  margin-left: 130px;
+}
