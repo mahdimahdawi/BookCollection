@@ -28,7 +28,7 @@ class BookClass {
     this.author.value = '';
   }
 
-  RemoveBook(k, index) {
+   removeBook(k, index) {
     k.splice(index, 1);
     localStorage.setItem('book', JSON.stringify(k));
     setTimeout(window.location.reload(), 1000);
@@ -59,6 +59,6 @@ const removeBtns = document.querySelectorAll('.remove-btn');
 removeBtns.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     const bk = new BookClass();
-    bk.RemoveBook(books, i);
+    bk.removeBook(books, i);
   });
 });
