@@ -1,6 +1,6 @@
 const bookList = document.querySelector('.book-list');
-const B_title = document.querySelector('.title');
-const B_author = document.querySelector('.author');
+const b_title = document.querySelector('.title');
+const b_author = document.querySelector('.author');
 const addButton = document.querySelector('.add');
 
 let localBooks = [];
@@ -13,8 +13,6 @@ function displayBook(b) {
   <button class="remove-btn">Remove</button>`;
   bookList.appendChild(bookDiv);
 }
-
-
 class BookClass {
   constructor(bookTitle, bookAuthor) {
     this.title = bookTitle;
@@ -26,10 +24,9 @@ class BookClass {
     displayBook(this);
     setTimeout(window.location.reload(), 1000);
     localStorage.setItem('book', JSON.stringify(books));
-    title.value = '';
-    author.value = '';
+    this.title.value = '';
+    this.author.value = '';
   }
-
 
   RemoveBook(books, index) {
     books.splice(index, 1);
@@ -52,7 +49,7 @@ const getBook = () => {
 // Event listener for add button
 addButton.addEventListener('click', (e) => {
   e.preventDefault();
-  const bk = new BookClass(B_title.value, B_author.value);
+  const bk = new BookClass(b_title.value, b_author.value);
   bk.AddBook();
 });
 
