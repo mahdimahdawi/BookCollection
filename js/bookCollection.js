@@ -14,7 +14,7 @@ function displayBook(b) {
   bookList.appendChild(bookDiv);
 }
 class BookClass {
-  constructor(bookTitle, bookAuthor) {
+  Constructor(bookTitle, bookAuthor) {
     this.title = bookTitle;
     this.author = bookAuthor;
   }
@@ -28,7 +28,8 @@ class BookClass {
     this.author.value = '';
   }
 
-   removeBook(k, index) {
+  removeBook(k, index) {
+    this.book = k;
     k.splice(index, 1);
     localStorage.setItem('book', JSON.stringify(k));
     setTimeout(window.location.reload(), 1000);
