@@ -34,7 +34,7 @@ li {
 
 .date-time {
   float: right;
-  margin-right: 70px;
+  margin-right: 30px;
   margin-top: -5px;
   font-family: sans-serif;
 }
@@ -44,7 +44,7 @@ li {
   font-size: 15px;
   border-right: 2px solid black;
   padding-right: 10px;
-  
+
 }
 
 .book-list-page {
@@ -91,8 +91,8 @@ li {
   justify-content: space-between;
 }
 
-.book-div:nth-of-type(odd){
-  background-color: rgb(160, 137, 137);
+.book-div:nth-of-type(odd) {
+  background-color: gray;
 }
 
 .remove-btn {
@@ -141,4 +141,10 @@ input {
   text-align: left;
   font-size: 20px;
   font-weight: 600;
+}
+
+.book-heading {
+  margin-top: 20px;
+  font-family: sans-serif;
+  letter-spacing: 10px;
 }
