@@ -14,7 +14,7 @@ function displayBook(b) {
   bookList.appendChild(bookDiv);
 }
 class BookClass {
-  Constructor(bookTitle, bookAuthor) {
+  constructor(bookTitle, bookAuthor) {
     this.title = bookTitle;
     this.author = bookAuthor;
   }
