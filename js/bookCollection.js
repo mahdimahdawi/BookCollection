@@ -2,6 +2,11 @@ const bookList = document.querySelector('.book-list');
 const BookTitle = document.querySelector('.title');
 const BookAuthor = document.querySelector('.author');
 const addButton = document.querySelector('.add');
+const localTime = document.querySelector('.date-time');
+const listPage = document.querySelector('.book-list-page');
+const AddPage = document.querySelector('.add-book');
+const contactPage = document.querySelector('.contact');
+const navBar = document.querySelectorAll('.item-link');
 
 let localBooks = [];
 const books = [];
@@ -14,7 +19,7 @@ function displayBook(b) {
   bookList.appendChild(bookDiv);
 }
 class BookClass {
-  Constructor(bookTitle, bookAuthor) {
+  constructor(bookTitle, bookAuthor) {
     this.title = bookTitle;
     this.author = bookAuthor;
   }
@@ -61,5 +66,27 @@ removeBtns.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     const bk = new BookClass();
     bk.removeBook(books, i);
+  });
+});
+
+const time = Date();
+localTime.innerHTML = time;
+
+navBar.forEach((item) => {
+  item.addEventListener('click', () => {
+    if (item.id === 'list') {
+      listPage.classList.add('active');
+      contactPage.classList.add('active');
+      AddPage.classList.remove('active');
+      contactPage.style.display = 'none';
+    } else if (item.id === 'add') {
+      AddPage.classList.add('active');
+      listPage.classList.remove('active');
+      contactPage.style.display = 'none';
+    } else if (item.id === 'contact') {
+      contactPage.style.display = 'block';
+      listPage.classList.remove('active');
+      AddPage.classList.remove('active');
+    }
   });
 });
