@@ -44,7 +44,6 @@ li {
   font-size: 15px;
   border-right: 2px solid black;
   padding-right: 10px;
-
 }
 
 .book-list-page {
@@ -69,6 +68,11 @@ li {
 
 .contact {
   display: block;
+}
+
+.contact-link {
+  display: block;
+  
 }
 
 .book-section {
@@ -107,7 +111,6 @@ input {
   width: 50%;
   height: 30px;
   box-shadow: 1px 1px 1px 1px;
-
 }
 
 .page-title {
